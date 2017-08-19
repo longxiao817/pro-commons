@@ -1,15 +1,34 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.atguigu.mgt</groupId>
-    <artifactId>pro-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-  </parent>
-  <groupId>com.atguigu.mgt</groupId>
-  <artifactId>pro-commons</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-<!-- 导入公共依赖的一些包 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.atguigu.mgt</groupId>
+		<artifactId>pro-parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>pro-commons</artifactId>
+	<!-- 导入公共依赖的一些包 -->
 	<dependencies>
+
+		<!--shiro -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-ehcache</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+		</dependency>
+
+
 		<!-- 公共依赖 -->
 		<dependency>
 			<groupId>commons-io</groupId>
@@ -43,11 +62,11 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-email</artifactId>
 		</dependency>
-		
+
 		<dependency>
-				<groupId>org.apache.httpcomponents</groupId>
-				<artifactId>httpclient</artifactId>
-			</dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
 	</dependencies>
 
 
